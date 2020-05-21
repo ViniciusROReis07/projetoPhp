@@ -1,0 +1,6 @@
+#Projeto Hamburgueria
+
+#Modulo 0
+Neste modulo desenvoli a parte front-end do projeto , utilizando js,css e html.
+Nesta etapa do projeto comprendi melhor sintaxe e rescursos da linguagem php.
+Aprendi a fazer conexao entre a pagina php com banco de dados.
