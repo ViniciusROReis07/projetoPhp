@@ -119,7 +119,7 @@
                                
                            </div>  
                            <div class="enviarCritica">
-                                         <input type="submit" value="Enviar" name="sbtEnviar">
+                              <input type="submit" value="Enviar" name="sbtEnviar">
                           </div> 
                           <div id="observacao">
                                 <p>Itens com "*" e obrigatória a digitação</p>
