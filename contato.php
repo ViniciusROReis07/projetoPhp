@@ -50,7 +50,7 @@
           
           
           if(mysqli_query($conex,$sql)){
-            echo("<script> alert('Registro inserido com sucesso!') </script>");
+            header('Location: contato.php');
           }else{
             echo("<script> alert('Erro ao executar o script!') </script>");
           }
