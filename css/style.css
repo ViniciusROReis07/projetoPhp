@@ -490,7 +490,7 @@ span{
     }
     /* contado */
     #contato{
-        height: 900px;
+        height: 910px;
         width: 1400px;
         background-image: url(../imagens/conatato2.png);
         background-repeat: no-repeat;
@@ -509,11 +509,10 @@ span{
         box-sizing: border-box;
         text-align: center;
     
-       
     }
     
     #informacoes{
-        height: 500px;
+        height: 530px;
         width: inherit;
         background-color: rgba(0,0,0,0.8);
         text-align: justify;
@@ -531,13 +530,31 @@ span{
     .informacao input{
         width: 300px;
     }
-    .mensagem , .criticas{
-        height: 200px;
-        width: 300px;
+    .mensagem {
+        height: 310px;
+        width: 320px;
         float: left;
         margin-right: 50px;
+
     }
-    .mensagem textarea, .criticas textarea {
+    .mensagem h4{
+        margin-bottom: 45px;
+    }
+    .criticasSugestoes{
+        height: 310px;
+        width: 320px;
+        float: left;
+        margin-right: 50px;
+
+    }
+    #criticasSugestoesRadio{
+        height: 45px;
+        width: 300px;
+        color: white;
+        font-size: 1.2em;
+      
+    }
+    .mensagem textarea, .criticasSugestoes textarea {
         height: 200px;
         width: 300px;
         resize: none;

@@ -14,8 +14,9 @@ CREATE TABLE tblcontato (
     `linkFacebook` VARCHAR(100),
     `profissao` VARCHAR(100) NOT NULL,
     `mensagem` VARCHAR(500) NOT NULL,
-    `critica` VARCHAR(100),
+    `txtCriticaSugestao` VARCHAR(100) ,
+    `rdoCriticaSugestao`VARCHAR(9) NOT NULL,
     `sexo` VARCHAR(1) NOT NULL
 
-);
 
+);

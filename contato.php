@@ -11,9 +11,10 @@
     $facebook=(string) null;
     $profissao=(string) null;
     $mensagem=(string) null;
-    $critica=(string) null;
+    $txtCriticaSugestao=(string) null;
+    $rdoCriticaSugestao=(string)null;
     $sexo=(string) null;
-
+   
 
     if(!isset($_POST['sbtEnviar'])){
       
@@ -27,8 +28,10 @@
       $facebook=$_POST['txtFacebook'];
       $profissao=$_POST['txtProfissão'];
       $mensagem=$_POST['txtMensagem'];
-      $critica=$_POST['txtCriticas'];
+      $txtCriticaSugestao=$_POST['txtCriticas'];
+      $rdoCriticaSugestao=$_POST['criticaSugestao'];
       $sexo=$_POST['rdoSexo'];
+      
               
       if($nome==""||$celular==""||$email==""||$profissao==""||$mensagem==""||$sexo==""){
         echo(ERRO_CAIXA_VAZIA);
@@ -37,12 +40,12 @@
        
         $sql ="insert into tblcontato
             (
-             nome, telefone,celular,email,homePage,linkFacebook,profissao,mensagem,critica,sexo
+             nome, telefone,celular,email,homePage,linkFacebook,profissao,mensagem,txtCriticaSugestao,rdoCriticaSugestao,sexo
             )
             
             values
             (
-            '".$nome."','".$telefone."','".$celular."','".$email."','".$homePage."','".$facebook."','".$profissao."','".$mensagem."','".$critica."','".$sexo."'
+            '".$nome."','".$telefone."','".$celular."','".$email."','".$homePage."','".$facebook."','".$profissao."','".$mensagem."','".$txtCriticaSugestao."','".$rdoCriticaSugestao."','".$sexo."'
             
             )
         ";
@@ -101,8 +104,13 @@
                                 </textarea>
                                </div>
 
-                               <div class="criticas">
-                                <h4>Sugestão/Criticas </h4>
+                               <div class="criticasSugestoes">
+                                <h4>Sugestão/Criticas</h4>
+                                <div id="criticasSugestoesRadio">
+                                    <input type="radio" name="criticaSugestao" value="critica">Critica
+                                    <input type="radio" name="criticaSugestao" value="sigestao">Sugestão
+                                    <input type="radio" name="criticaSugestao" value="outros" checked>Outros
+                                </div>
                                 <textarea name="txtCriticas" id="criticas" cols="40" rows="15" maxlength="100" >
 
                                 </textarea>
